@@ -1,0 +1,58 @@
+{
+  "name": "@NetflixDev/bt-ER-980x250",
+  "version": "2.2.1",
+  "description": "C20/Monet-compatible templates that use  https://github.com/ff0000-ad-tech/ad-docs/blob/master/README.md",
+  "scripts": {
+    "c20": "node lib/api.js --cmd track && node lib/api.js --cmd publish"
+  },
+  "devDependencies": {
+    "archiver": "^1.3.0",
+    "@ff0000-ad-tech/debug": "^4.0.2",
+    "escape-regexp": "0.0.1",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "github-current-user": "^2.5.0",
+    "handlebars": "^4.0.10",
+    "jszip": "^3.1.5",
+    "minimist": "^1.2.0",
+    "muffle": "^2.0.1",
+    "ncp": "^2.0.0",
+    "np": "^2.18.3",
+    "prettier": "^1.9.2",
+    "prettier-eslint": "^8.7.1",
+    "rimraf": "^2.6.1",
+    "uuid": "^3.0.1",
+    "varname": "^2.0.3",
+    "walk": "^2.3.9"
+  },
+  "genericSource": {
+    "id": "883f6267-8d23-4d31-92d9-e8efdd7023de",
+    "name": "bt-ER-980x250",
+    "label": "Right Corner",
+    "description": "C20/Monet-compatible templates that use  https://github.com/ff0000-ad-tech/ad-docs/blob/master/README.md",
+    "type": "build_templates",
+    "builder": {
+      "label": "980x250",
+      "tier": "endframe-resolve",
+      "size": "980x250",
+      "creative": "./3-traffic/default/980x250",
+      "layouts": {
+        "SIDE_BY_SIDE_LEFT": "Side-By-Side Left",
+        "SIDE_BY_SIDE_OFF_CENTER_LEFT": "Side-By-Side Off-Center Left",
+        "SIDE_BY_SIDE_CENTER": "Side-By-Side Center",
+        "SIDE_BY_SIDE_OFF_CENTER_RIGHT": "Side-By-Side Off-Center Right",
+        "SIDE_BY_SIDE_RIGHT": "Side-By-Side Right",
+        "STACKED_LEFT": "Stacked Left",
+        "STACKED_CENTER": "Stacked Center"
+      }
+    },
+    "context": "RED Interactive",
+    "state": "published",
+    "updated": 1556660934858,
+    "username": "GitHub",
+    "full_name": "NetflixDev/bt-ER-980x250",
+    "html_url": "https://github.com/NetflixDev/bt-ER-980x250",
+    "version": "2.2.1"
+  }
+}

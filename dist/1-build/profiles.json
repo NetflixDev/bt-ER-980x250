@@ -1,0 +1,39 @@
+{
+  "default": {
+    "webpack": {
+      "deploy": {
+        "profile": {
+          "name": "default",
+          "adEnvironment": {
+            "id": "default",
+            "runPath": "",
+            "adPath": ""
+          }
+        }
+      }
+    },
+    "targets": [
+      {
+        "size": "300x250",
+        "index": "index.html",
+        "deployAt": 1554164904524
+      },
+      {
+        "size": "300x600",
+        "index": "index.html",
+        "deployAt": 1554834587278
+      },
+      {
+        "size": "970x250",
+        "index": "index.html",
+        "deployAt": 1556579215392
+      },
+      {
+        "size": "980x250",
+        "index": "index.html",
+        "deployAt": 1556660898188
+      }
+    ],
+    "updateAt": 1546631498784
+  }
+}
