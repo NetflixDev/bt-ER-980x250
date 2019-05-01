@@ -13,7 +13,8 @@ module.exports = {
     "label": "980x250",
     "tier": "endframe-resolve",
     "size": "980x250",
-    "creative": "./3-traffic/default/980x250",
+    "creative": "./dist/3-traffic/default/980x250",
+    "toolkit": "./toolkit/980x250_NF_Global_Template_ContainerRecycle_Layered.psd",
     "layouts": {
       "SIDE_BY_SIDE_LEFT": "Side-By-Side Left",
       "SIDE_BY_SIDE_OFF_CENTER_LEFT": "Side-By-Side Off-Center Left",
@@ -26,7 +27,7 @@ module.exports = {
   },
   "context": "RED Interactive",
   "state": "published",
-  "updated": 1556660930070,
+  "updated": 1556669710088,
   "username": "GitHub",
   "full_name": "NetflixDev/bt-ER-980x250",
   "html_url": "https://github.com/NetflixDev/bt-ER-980x250",
