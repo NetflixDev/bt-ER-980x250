@@ -17,8 +17,8 @@ export class Preflight {
 		return new Promise((resolve, reject) => {
 			let promises = [
 				// this.loadDynamicJS('define-your-case-id')
-				this.loadCreativeJs()
 			]
+			promises.push(this.loadCreativeJs())
 
 			Promise.all(promises)
 				.then(() => {
@@ -33,18 +33,6 @@ export class Preflight {
 				})
 		})
 	}
-
-	static addPreloadedImages() {
-		console.log('Preflight.addPreloadedImages()')
-		ImageManager.addToDictionary(assets.preloadedImages)
-	}
-
-	static prepareAdData() {
-		console.log('Preflight.prepareAdData()')
-
-		global.adData = new AdData()
-	}
-
 	static loadCreativeJs() {
 		console.log('Preflight.loadCreativeJs()')
 		return new Promise((resolve, reject) => {
@@ -57,6 +45,17 @@ export class Preflight {
 				}
 			}).load()
 		})
+	}
+
+	static addPreloadedImages() {
+		console.log('Preflight.addPreloadedImages()')
+		ImageManager.addToDictionary(assets.preloadedImages)
+	}
+
+	static prepareAdData() {
+		console.log('Preflight.prepareAdData()')
+
+		global.adData = new AdData()
 	}
 
 	/**

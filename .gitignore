@@ -8,3 +8,7 @@ bower_components/
 log.txt
 .DS_Store
 *.pyc
+
+# BSA Misc Files
+src/.gitignore
+dist/.gitignore

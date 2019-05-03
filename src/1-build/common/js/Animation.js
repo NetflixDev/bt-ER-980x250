@@ -6,6 +6,7 @@ export class Animation {
 		// show the main container
 		global.removePreloader()
 		Styles.setCss(View.main, { opacity: 1 })
+
 		Animation.playIntro()
 	}
 

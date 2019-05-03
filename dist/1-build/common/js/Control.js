@@ -86,6 +86,7 @@ export class Control {
 
 				// proceed with ad AFTER the setData() Promise has been fulfilled
 				ImageManager.load(function() {
+					if (View.intro) View.intro.postMarkupStyling()
 					View.endFrame.postMarkupStyling()
 					Control.postMarkup()
 					Animation.start()

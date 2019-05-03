@@ -1,7 +1,7 @@
 ##### RED Interactive Agency - Ad Technology
 
 <!-- Red.Component.title.start -->
-# Netflix Monet - Intro/Endframe Branded
+# Netflix Monet - Builder Templates
 
 <!-- Red.Component.title.end -->
 
@@ -39,7 +39,7 @@ Your job is to build the creative using your ES6/Javascript/Html/CSS abilities. 
 2.  Run [Creative Server](#creative-server)
 3.  Begin a [Watch Process](#watch-process)
 4.  [Preview](#preview) the result
-5.  [Author](#authoring) your Size/Index & `build.js`
+5.  [Author](#authoring) your Size/Index & Build
 6.  Publish for [Traffic](#traffic)
 
 ### System Dependencies
@@ -292,7 +292,7 @@ This template is a rich-media unit, configured for the Netflix Monet CMP, which 
 
 <!-- Red.Component.networks.end -->
 
-Other templates for Velvet, DC Studio, Flashtalking, and Sizmek are available -- check out this project for a complete library: [tmpl-build-sources](https://github.com/ff0000-ad-tech/tmpl-build-sources).
+Other templates for Velvet, DC Studio, Flashtalking, and Sizmek are available -- check out this project for a complete library: [build-source-assembler](https://github.com/ff0000-ad-tech/build-source-assembler).
 
 As much as possible, we have tried to isolate Network interfacing to the `index.html`, so that creative is easily ported from one template-type to another.
 
