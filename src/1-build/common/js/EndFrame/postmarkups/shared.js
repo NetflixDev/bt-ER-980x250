@@ -15,12 +15,31 @@ export function titleTreatmentLayout(T) {
 		T.removeChild(T.tt)
 		T.tt = new UIImage({
 			target: T,
-			source: adData.ttSrc,
-			css: {
-				width: adParams.adWidth
-			}
+			source: adData.ttSrc
 		})
 	}
 
-	Align.set(T.tt, Align.CENTER)
+	// use UIImage or (netflix-img > img) element to get TT's dimensions
+	const ttImgElement = adData.hasTT ? T.tt.querySelector('img') : T.tt
+	const ttIsAdSized = ttImgElement.width === adParams.adWidth && ttImgElement.height === adParams.adHeight
+	const ttCenter = adData.ttCenter || {
+		x: ~~(adParams.adWidth / 2),
+		y: ~~(adParams.adHeight / 2)
+	}
+
+	Align.set(
+		T.tt,
+		ttIsAdSized
+			? Align.CENTER
+			: {
+					x: {
+						type: Align.CENTER,
+						against: ttCenter.x
+					},
+					y: {
+						type: Align.CENTER,
+						against: ttCenter.y
+					}
+			  }
+	)
 }

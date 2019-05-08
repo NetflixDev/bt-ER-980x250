@@ -5,10 +5,10 @@
       "id": "Title_Treatment",
       "url": ""
     },
-    "image.Keyart": {
+    "image.Background": {
       "type": "image",
-      "id": "Keyart",
-      "url": "keyart.jpg"
+      "id": "Background",
+      "url": "background.jpg"
     },
     "text.Tune_In": {
       "type": "text",

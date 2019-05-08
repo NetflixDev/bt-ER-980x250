@@ -13,12 +13,6 @@ export default function stackedPostMarkup() {
 	// title treatment
 	titleTreatmentLayout(T)
 
-	// title treatment
-	Align.set(T.tt, {
-		x: Align.CENTER,
-		y: Align.CENTER
-	})
-
 	Align.set(T.pedigree, {
 		x: {
 			type: Align.CENTER,

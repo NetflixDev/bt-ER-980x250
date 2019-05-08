@@ -13,10 +13,10 @@ function mainInit(T) {
 }
 
 function baseInit(T, { ctaLogoInit = mainCtaLogoInit }) {
-	T.keyart = document.createElement('netflix-img')
-	T.keyart.setAttribute('data-dynamic-key', 'Keyart')
-	T.keyart.setAttribute('width', adParams.adWidth)
-	T.appendChild(T.keyart)
+	T.background = document.createElement('netflix-img')
+	T.background.setAttribute('data-dynamic-key', 'Background')
+	T.background.setAttribute('width', adParams.adWidth)
+	T.appendChild(T.background)
 
 	T.pedigree = new UITextField({
 		target: T,
@@ -36,7 +36,6 @@ function baseInit(T, { ctaLogoInit = mainCtaLogoInit }) {
 	// title treatment
 	T.tt = document.createElement('netflix-img')
 	T.tt.setAttribute('data-dynamic-key', 'Title_Treatment')
-	T.tt.setAttribute('height', adParams.adHeight)
 	T.appendChild(T.tt)
 
 	// free trial messaging
