@@ -1,6 +1,6 @@
 {
   "name": "@NetflixDev/bt-ER-980x250",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "C20/Monet-compatible templates that use  https://github.com/ff0000-ad-tech/ad-docs/blob/master/README.md",
   "scripts": {
     "c20": "node lib/api.js --cmd track && node lib/api.js --cmd publish"
@@ -50,11 +50,11 @@
     },
     "context": "RED Interactive",
     "state": "published",
-    "updated": 1557352588018,
+    "updated": 1557424157521,
     "username": "GitHub",
     "full_name": "NetflixDev/bt-ER-980x250",
     "html_url": "https://github.com/NetflixDev/bt-ER-980x250",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "minimum": "2.2.1"
   }
 }
