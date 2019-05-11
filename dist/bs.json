@@ -1,0 +1,16 @@
+{
+  "name": "src",
+  "build_size": "980x250",
+  "build_source": {
+    "build_source_path": "./c20-builder-980x250/"
+  },
+  "build_source_options": {
+    "stub_paths": []
+  },
+  "output": "/Users/greg.connell/Documents/_NETFLIX/bt-ER-980x250",
+  "filters": {},
+  "id": "Container 2.0 - 980x250",
+  "bsid": "dc9a0cc4-11f0-4c74-b9fb-1da902a1c788",
+  "processing": false,
+  "error": false
+}
