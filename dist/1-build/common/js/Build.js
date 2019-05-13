@@ -16,7 +16,6 @@ import { mainInit } from './EndFrame/inits'
 import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import '@netflixadseng/wc-netflix-flushed-ribbon'
-import '@netflixadseng/wc-netflix-video'
 import { UIComponent, UIBorder, UIButton, UIImage, TextFormat, UITextField, UISvg } from 'ad-ui'
 import { ObjectUtils } from 'ad-utils'
 
@@ -82,8 +81,7 @@ export function EndFrame(arg) {
 		default:
 			postMarkup = rightPostMarkup
 			break
-		case 'STACKED_LEFT':
-		case 'STACKED_CENTER':
+		case 'STACKED':
 			postMarkup = stackedPostMarkup
 			break
 	}

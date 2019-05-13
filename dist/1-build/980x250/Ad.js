@@ -4,6 +4,7 @@ import { EndFrame, Main, Intro, MainBorder } from '@common/js/Build.js'
 import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import { Device } from 'ad-external'
+import '@netflixadseng/wc-netflix-video'
 
 export class Ad {
 	// called from index.html onImpression()
