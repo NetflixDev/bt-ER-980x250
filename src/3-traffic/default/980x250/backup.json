@@ -1,51 +1,57 @@
 {
-	"rootAssets": {
-		"image.Background": {
-			"type": "image",
-			"id": "Background",
-			"url": "background.jpg"
-		},
-		"image.Title_Treatment": {
-			"type": "image",
-			"id": "Title_Treatment",
-			"url": ""
-		},
-		"text.Tune_In": {
-			"type": "text",
-			"id": "Tune_In",
-			"text": ""
-		},
-		"text.CTA": {
-			"type": "text",
-			"id": "CTA",
-			"text": "WATCH NOW"
-		},
-		"text.FTM": {
-			"type": "text",
-			"id": "FTM",
-			"text": ""
-		},
-		"url.Exit_URL_iOS": {
-			"type": "url",
-			"id": "Exit_URL_iOS",
-			"url": "https://www.netflix.com/"
-		},
-		"url.Exit_URL_Android": {
-			"type": "url",
-			"id": "Exit_URL_Android",
-			"url": "https://www.netflix.com/"
-		},
-		"url.Exit_URL_Desktop": {
-			"type": "url",
-			"id": "Exit_URL_Desktop",
-			"url": "https://www.netflix.com/"
-		},
-		"image.Ratings_Bug_20x20": {
-			"type": "image",
-			"id": "Ratings_Bug_20x20",
-			"url": ""
-		}
-	},
-	"assetGroups": [],
-	"localizations": {}
+  "rootAssets": {
+    "image.Background": {
+      "type": "image",
+      "id": "Background",
+      "url": "background.jpg"
+    },
+    "image.Title_Treatment": {
+      "type": "image",
+      "id": "Title_Treatment",
+      "url": ""
+    },
+    "text.Tune_In": {
+      "type": "text",
+      "id": "Tune_In",
+      "text": ""
+    },
+    "text.CTA": {
+      "type": "text",
+      "id": "CTA",
+      "text": "WATCH NOW"
+    },
+    "text.FTM": {
+      "type": "text",
+      "id": "FTM",
+      "text": ""
+    },
+    "url.Exit_URL_iOS": {
+      "type": "url",
+      "id": "Exit_URL_iOS",
+      "url": "https://www.netflix.com/"
+    },
+    "url.Exit_URL_Android": {
+      "type": "url",
+      "id": "Exit_URL_Android",
+      "url": "https://www.netflix.com/"
+    },
+    "url.Exit_URL_Desktop": {
+      "type": "url",
+      "id": "Exit_URL_Desktop",
+      "url": "https://www.netflix.com/"
+    },
+    "image.Ratings_Bug_20x20": {
+      "type": "image",
+      "id": "Ratings_Bug_20x20",
+      "url": ""
+    },
+    "video.Supercut": {
+      "type": "video",
+      "id": "Supercut",
+      "url": "",
+      "videoType": "SUPERCUT"
+    }
+  },
+  "assetGroups": [],
+  "localizations": {}
 }
