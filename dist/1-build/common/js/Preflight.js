@@ -1,7 +1,6 @@
 import AdData from '@common/js/AdData.js'
 import { ImageManager } from 'ad-control'
-/*-- Red.Imports.head.start --*/
-/*-- Red.Imports.head.end --*/
+import { MonetUtils } from 'ad-utils'
 
 /**
 	PRE-FLIGHT		
@@ -18,7 +17,7 @@ export class Preflight {
 			let promises = [
 				// this.loadDynamicJS('define-your-case-id')
 			]
-			promises.push(this.loadCreativeJs())
+			promises.push(this.loadCreativeJs(), this.loadNetflixVideo())
 
 			Promise.all(promises)
 				.then(() => {
@@ -45,6 +44,22 @@ export class Preflight {
 				}
 			}).load()
 		})
+	}
+
+	static loadNetflixVideo() {
+		console.log('Preflight.loadNetflixVideo()')
+		// wait for Monet data to populate in MonetUtils closure
+		return (
+			MonetUtils.setData(View.monetIntegrator)
+				// check for Supercut toggle value in Monet data
+				.then(() => {
+					// load wc-netflix-video if using Supercut
+					if (MonetUtils.getDataByKey('Supercut')) {
+						return import('@netflixadseng/wc-netflix-video')
+					}
+					return Promise.resolve()
+				})
+		)
 	}
 
 	static addPreloadedImages() {

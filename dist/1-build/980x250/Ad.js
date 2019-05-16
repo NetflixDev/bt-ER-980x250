@@ -4,7 +4,7 @@ import { EndFrame, Main, Intro, MainBorder } from '@common/js/Build.js'
 import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import { Device } from 'ad-external'
-import '@netflixadseng/wc-netflix-video'
+import { MonetUtils } from 'ad-utils'
 
 export class Ad {
 	// called from index.html onImpression()
@@ -28,6 +28,7 @@ export class Ad {
 			target: View.main,
 			layout: window.Creative && Creative.layout
 		})
+		if (MonetUtils.getDataByKey('Supercut')) View.intro = new Intro({ target: View.main })
 
 		View.mainBorder = new MainBorder()
 

@@ -16,7 +16,20 @@ export class Animation {
 	}
 
 	static playIntro() {
-		Animation.showEndFrame()
+		if (View.intro) {
+			Styles.setCss(View.intro.netflixLogo, { opacity: 1 })
+			View.intro.introVideoPlayer.play()
+
+			TweenLite.delayedCall(2.5, function() {
+				View.intro.netflixLogo.reverse()
+			})
+			TweenLite.delayedCall(6, function() {
+				View.intro.netflixLogo.play()
+			})
+			TweenLite.to(View.intro.netflixLogo, 0.25, { delay: 8, alpha: 0 })
+		} else {
+			Animation.showEndFrame()
+		}
 	}
 
 	static showEndFrame() {
