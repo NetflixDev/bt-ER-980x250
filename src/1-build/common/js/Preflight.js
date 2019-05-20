@@ -54,7 +54,7 @@ export class Preflight {
 				// check for Supercut toggle value in Monet data
 				.then(() => {
 					// load wc-netflix-video if using Supercut
-					if (MonetUtils.getDataByKey('Supercut')) {
+					if (MonetUtils.getDataByKey('Toggle_Supercut')) {
 						return import('@netflixadseng/wc-netflix-video')
 					}
 					return Promise.resolve()

@@ -18,6 +18,13 @@ export class Control {
 		Gesture.add(View.endFrame, GestureEvent.CLICK, Control.handleClick)
 
 		View.endFrame.hide()
+
+		Gesture.add(View.endFrame, GestureEvent.OVER, function() {
+			View.endFrame.cta.mouseover()
+		})
+		Gesture.add(View.endFrame, GestureEvent.OUT, function() {
+			View.endFrame.cta.mouseout()
+		})
 	}
 
 	static handleClick(event) {

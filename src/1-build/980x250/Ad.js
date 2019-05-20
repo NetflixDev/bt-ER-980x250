@@ -28,7 +28,7 @@ export class Ad {
 			target: View.main,
 			layout: window.Creative && Creative.layout
 		})
-		if (MonetUtils.getDataByKey('Supercut')) View.intro = new Intro({ target: View.main })
+		if (MonetUtils.getDataByKey('Toggle_Supercut')) View.intro = new Intro({ target: View.main })
 
 		View.mainBorder = new MainBorder()
 
