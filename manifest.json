@@ -23,18 +23,18 @@
 				"toolTip": "Title Treatment image:<ul><li>Match dimensions of the Container</li><li>Use a transparent PNG</li></ul>"
 			}
 		},
-		"Tune_In": {
-			"input": {
-				"state": "optional",
-				"pattern": ".*",
-				"toolTip": "Tune-in text."
-			}
-		},
 		"CTA": {
 			"input": {
 				"state": "required",
 				"pattern": ".*",
 				"toolTip": "Call-to-action text."
+			}
+		},
+		"Tune_In": {
+			"input": {
+				"state": "optional",
+				"pattern": ".*",
+				"toolTip": "Tune-in text."
 			}
 		},
 		"Toggle_Supercut": {
