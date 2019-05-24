@@ -1,0 +1,70 @@
+{
+	"container": {
+		"lockup": {
+			"state": "optional",
+			"toolTip": "Lock-up options determine where the Netflix Logo, CTA, and Tune-in appear."
+		},
+		"animation": {
+			"state": "optional",
+			"toolTip": "Animation options determine how the ad resolves to endframe."
+		},
+		"failover": {
+			"state": "required",
+			"toolTip": "Failover image is a static jpeg, only used in cases when the ad fails to play."
+		}
+	},
+	"assets": {
+		"Background": {
+			"input": {
+				"state": "required",
+				"toolTip":
+					"Background image: <ul><li>Match dimensions of the Container</li> <li>Do <b>not</b> include brand elements (Title, Logo, CTA, Tune-In)</li></ul>"
+			}
+		},
+		"Title_Treatment": {
+			"input": {
+				"state": "required",
+				"toolTip": "Title Treatment image:<ul><li>Match dimensions of the Container</li><li>Use a transparent PNG</li></ul>"
+			}
+		},
+		"Tune_In": {
+			"input": {
+				"state": "required",
+				"pattern": ".*",
+				"toolTip": "Tune-in text."
+			}
+		},
+		"CTA": {
+			"input": {
+				"state": "required",
+				"pattern": ".*",
+				"toolTip": "Call-to-action text."
+			}
+		},
+		"FTM": {
+			"input": {
+				"state": "disabled"
+			}
+		},
+		"Exit_URL_iOS": {
+			"input": {
+				"state": "disabled"
+			}
+		},
+		"Exit_URL_Android": {
+			"input": {
+				"state": "disabled"
+			}
+		},
+		"Exit_URL_Desktop": {
+			"input": {
+				"state": "disabled"
+			}
+		},
+		"Ratings_Bug_20x20": {
+			"input": {
+				"state": "disabled"
+			}
+		}
+	}
+}
