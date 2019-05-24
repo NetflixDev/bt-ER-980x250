@@ -53,40 +53,6 @@ export class Control {
 				// if not provided, use default title treatment img for given layout
 				adData.hasTT = !!MonetUtils.getDataByKey('Title_Treatment')
 
-				const layout = window.Creative && Creative.layout
-				let ttUrl, ttCenter
-				switch (layout) {
-					case 'SIDE_BY_SIDE_LEFT':
-						ttUrl = 'title-treatments/tt-left.png'
-						ttCenter = { x: 190, y: 80 }
-						break
-					case 'SIDE_BY_SIDE_OFF_CENTER_LEFT':
-						ttUrl = 'title-treatments/tt-off-center-left.png'
-						ttCenter = { x: 320, y: 80 }
-						break
-					case 'SIDE_BY_SIDE_CENTER':
-						ttUrl = 'title-treatments/tt-center.png'
-						ttCenter = { x: 490, y: 80 }
-						break
-					case 'SIDE_BY_SIDE_OFF_CENTER_RIGHT':
-						ttUrl = 'title-treatments/tt-off-center-right.png'
-						ttCenter = { x: 653, y: 80 }
-						break
-					case 'SIDE_BY_SIDE_RIGHT':
-					default:
-						ttUrl = 'title-treatments/tt-right.png'
-						ttCenter = { x: 790, y: 80 }
-						break
-					case 'STACKED':
-						ttUrl = 'title-treatments/tt-stacked-left.png'
-						ttCenter = { x: 190, y: 125 }
-						break
-				}
-
-				// load TT
-				adData.ttSrc = ImageManager.addToLoad(ttUrl)
-				adData.ttCenter = ttCenter
-
 				// proceed with ad AFTER the setData() Promise has been fulfilled
 				ImageManager.load(function() {
 					if (View.intro) View.intro.postMarkupStyling()
