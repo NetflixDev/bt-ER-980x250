@@ -6,7 +6,6 @@ if (typeof module === 'undefined') {
 module.exports = {
   "id": "883f6267-8d23-4d31-92d9-e8efdd7023de",
   "name": "bt-ER-980x250",
-  "label": "Right Corner",
   "description": "C20/Monet-compatible templates that use  https://github.com/ff0000-ad-tech/ad-docs/blob/master/README.md",
   "type": "build_templates",
   "builder": {
@@ -25,7 +24,7 @@ module.exports = {
   },
   "context": "RED Interactive",
   "state": "published",
-  "updated": 1558654111478,
+  "updated": 1559154752264,
   "username": "GitHub",
   "full_name": "NetflixDev/bt-ER-980x250",
   "html_url": "https://github.com/NetflixDev/bt-ER-980x250",
