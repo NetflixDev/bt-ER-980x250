@@ -1,6 +1,6 @@
 import { Core } from 'ad-control'
 import { Preflight } from '@common/js/Preflight.js'
-import { EndFrame, Main, Intro, MainBorder } from '@common/js/Build.js'
+import { EndFrame, Main, Intro, NetflixRibbon, MainBorder } from '@common/js/Build.js'
 import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import { Device } from 'ad-external'
@@ -28,7 +28,18 @@ export class Ad {
 			target: View.main,
 			layout: window.Creative && Creative.layout
 		})
-		if (MonetUtils.getDataByKey('Toggle_Supercut')) View.intro = new Intro({ target: View.main })
+
+		if (adData.useSupercut) {
+			View.intro = new Intro({ target: View.main })
+		}
+
+		if (adData.useRibbon) {
+			View.ribbon = new NetflixRibbon()
+			View.ribbon.addEventListener('coverComplete', function(event) {
+				event.stopImmediatePropagation() // this event was coming through twice
+				Animation.playIntro()
+			})
+		}
 
 		View.mainBorder = new MainBorder()
 

@@ -17,12 +17,15 @@ export class Preflight {
 			let promises = [
 				// this.loadDynamicJS('define-your-case-id')
 			]
-			promises.push(this.loadCreativeJs(), this.loadNetflixVideo())
+			promises.push(this.loadCreativeJs())
 
-			Promise.all(promises)
+			// ensuring backup.json/Monet data available before rest of preflight actions
+			MonetUtils.setData(View.monetIntegrator)
+				.then(this.prepareAdData)
+				.then(this.loadNetflixVideo)
+				.then(() => Promise.all(promises))
 				.then(() => {
 					this.addPreloadedImages()
-					this.prepareAdData()
 				})
 				.then(() => {
 					resolve()
@@ -48,18 +51,10 @@ export class Preflight {
 
 	static loadNetflixVideo() {
 		console.log('Preflight.loadNetflixVideo()')
-		// wait for Monet data to populate in MonetUtils closure
-		return (
-			MonetUtils.setData(View.monetIntegrator)
-				// check for Supercut toggle value in Monet data
-				.then(() => {
-					// load wc-netflix-video if using Supercut
-					if (MonetUtils.getDataByKey('Toggle_Supercut')) {
-						return import('@netflixadseng/wc-netflix-video')
-					}
-					return Promise.resolve()
-				})
-		)
+		if (adData.useSupercut) {
+			return import('@netflixadseng/wc-netflix-video')
+		}
+		return Promise.resolve()
 	}
 
 	static addPreloadedImages() {

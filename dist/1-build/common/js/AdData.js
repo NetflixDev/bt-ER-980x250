@@ -1,4 +1,5 @@
 import { ImageManager } from 'ad-control'
+import { MonetUtils } from 'ad-utils'
 
 export default function AdData() {
 	var self = this
@@ -31,4 +32,8 @@ export default function AdData() {
 
 	// Store svg markup for use in all UISvg instances, reduces duplicate code across builds.  See UISvg.
 	self.svg = {}
+
+	self.useSupercut = MonetUtils.getDataByKey('Toggle_Supercut')
+	self.useRibbon = MonetUtils.getDataByKey('Toggle_Ribbon')
+	self.hasTT = !!MonetUtils.getDataByKey('Title_Treatment')
 }

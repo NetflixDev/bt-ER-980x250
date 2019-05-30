@@ -124,6 +124,16 @@ export function EndFrame(arg) {
 	return T
 }
 
+// ==============================================================================================================
+export function NetflixRibbon() {
+	var T = document.createElement('netflix-flushed-ribbon')
+	T.setAttribute('width', adParams.adWidth)
+	T.setAttribute('height', adParams.adHeight)
+	T.style.position = 'absolute'
+	View.main.appendChild(T)
+	return T
+}
+
 export function MainBorder() {
 	new UIBorder({
 		target: View.main,

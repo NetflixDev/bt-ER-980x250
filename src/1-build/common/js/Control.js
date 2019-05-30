@@ -49,10 +49,6 @@ export class Control {
 				// adData.ratingsSrc = ImageManager.addToLoad(MonetUtils.getDataByKey('Ratings_Bug_20x20'), { forCanvas: false })
 				//
 
-				// check for title treatment url/path in Monet data
-				// if not provided, use default title treatment img for given layout
-				adData.hasTT = !!MonetUtils.getDataByKey('Title_Treatment')
-
 				// proceed with ad AFTER the setData() Promise has been fulfilled
 				ImageManager.load(function() {
 					if (View.intro) View.intro.postMarkupStyling()

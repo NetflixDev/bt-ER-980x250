@@ -7,7 +7,11 @@ export class Animation {
 		global.removePreloader()
 		Styles.setCss(View.main, { opacity: 1 })
 
-		Animation.playIntro()
+		if (View.ribbon) {
+			View.ribbon.play()
+		} else {
+			Animation.playIntro()
+		}
 	}
 
 	// IMPORTANT!!! Call this function when your animation is complete!
