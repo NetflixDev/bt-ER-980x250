@@ -29,7 +29,7 @@ export class Ad {
 			layout: window.Creative && Creative.layout
 		})
 
-		if (adData.useSupercut) {
+		if (adData.useSupercut && Device.type === 'desktop') {
 			View.intro = new Intro({ target: View.main })
 		}
 
