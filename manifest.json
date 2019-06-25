@@ -50,7 +50,8 @@
     },
     "Supercut": {
       "input": {
-        "state": "disabled"
+        "state": "optional",
+        "toolTip": "Temporary supercut URL. Actual supercut will be uploaded in setting up treatment in Monet."
       }
     },
     "FTM": {
@@ -76,12 +77,6 @@
     "Ratings_Bug_20x20": {
       "input": {
         "state": "disabled"
-      }
-    },
-    "Supercut": {
-      "input": {
-        "state": "optional",
-        "toolTip": "Temporary supercut URL. Actual supercut will be uploaded in setting up treatment in Monet." 
       }
     }
   }
