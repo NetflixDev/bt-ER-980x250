@@ -77,6 +77,12 @@
       "input": {
         "state": "disabled"
       }
+    },
+    "Supercut": {
+      "input": {
+        "state": "optional",
+        "toolTip": "Temporary supercut URL. Actual supercut will be uploaded in setting up treatment in Monet." 
+      }
     }
   }
 }
