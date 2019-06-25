@@ -36,6 +36,12 @@
         "toolTip": "Tune-in text."
       }
     },
+    "Toggle_Ribbon": {
+      "input": {
+        "state": "optional",
+        "toolTip": "Enabling Ribbon will play a scaled N ribbon animation before the endframe. If Supercut is also enabled, this animation plays before the video."
+      }
+    },
     "Toggle_Supercut": {
       "input": {
         "state": "optional",
