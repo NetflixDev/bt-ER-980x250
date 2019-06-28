@@ -51,7 +51,7 @@
     "Supercut": {
       "input": {
         "state": "optional",
-        "toolTip": "Temporary supercut URL. Actual supercut will be uploaded in setting up treatment in Monet."
+        "toolTip": "Temporary supercut URL. Actual supercut will be uploaded in setting up treatment in Monet. Please upload only .mp4 videos under 1 MB."
       }
     },
     "FTM": {
