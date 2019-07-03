@@ -3,7 +3,7 @@
     "image.Background": {
       "type": "image",
       "id": "Background",
-      "url": "background.jpg"
+      "url": "treatment-assets/background.jpg"
     },
     "image.Title_Treatment": {
       "type": "image",
