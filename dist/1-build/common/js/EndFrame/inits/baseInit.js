@@ -24,6 +24,13 @@ export default function baseInit(
     extraCtaLogoInit
   }
 ) {
+  // determine if logo and CTA are vertically laid out
+  const isVerticalLockup =
+    (window.Creative && Creative.layout
+      (Creative.layout === "STACKED" ||
+        Creative.layout.indexOf("CORNER") > -1)) ||
+    false;
+
   T.background = document.createElement("netflix-img");
   T.background.setAttribute("data-dynamic-key", "Background");
   T.background.setAttribute("width", adParams.adWidth);
@@ -69,7 +76,7 @@ export default function baseInit(
   T.cta.setAttribute("arrow", "");
   T.cta.setAttribute("border", "");
   T.cta.setAttribute("width", ctaWidth);
-  T.cta.setAttribute("max-width", ctaMaxWidth);
+  T.cta.setAttribute("max-width", isVerticalLockup ? ctaWidth : ctaMaxWidth);
   T.cta.setAttribute("height", ctaHeight);
 
   if (typeof extraCtaLogoInit === "function") {
