@@ -26,7 +26,8 @@ export default function baseInit(
 ) {
   // determine if logo and CTA are vertically laid out
   const isVerticalLockup =
-    (window.Creative && Creative.layout
+    (window.Creative &&
+      Creative.layout &&
       (Creative.layout === "STACKED" ||
         Creative.layout.indexOf("CORNER") > -1)) ||
     false;
