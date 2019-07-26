@@ -10,7 +10,6 @@ import {
 import { Animation } from "@common/js/Animation.js";
 import { Control } from "@common/js/Control.js";
 import { Device } from "ad-external";
-import { MonetUtils } from "ad-utils";
 
 export class Ad {
   // called from index.html onImpression()
@@ -35,16 +34,21 @@ export class Ad {
       layout: window.Creative && Creative.layout
     });
 
+    View.ribbon = new NetflixRibbon();
+    View.ribbon.addEventListener("coverComplete", function(event) {
+      event.stopImmediatePropagation(); // this event was coming through twice
+      Animation.playIntro();
+    });
+
+    View.ribbon.addEventListener("leftPillarComplete", function(event) {
+      event.stopImmediatePropagation(); // this event was coming through twice
+      if (!adData.useSupercut) {
+        Animation.playCreative();
+      }
+    });
+
     if (adData.useSupercut && Device.type === "desktop") {
       View.intro = new Intro({ target: View.main });
-    }
-
-    if (adData.useRibbon) {
-      View.ribbon = new NetflixRibbon();
-      View.ribbon.addEventListener("coverComplete", function(event) {
-        event.stopImmediatePropagation(); // this event was coming through twice
-        Animation.playIntro();
-      });
     }
 
     View.mainBorder = new MainBorder();

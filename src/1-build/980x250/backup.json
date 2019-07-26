@@ -10,6 +10,11 @@
       "id": "Title_Treatment",
       "url": ""
     },
+    "bool.Retina_Title_Treatment": {
+      "type": "bool",
+      "id": "Retina_Title_Treatment",
+      "value": true
+    },
     "text.Tune_In": {
       "type": "text",
       "id": "Tune_In",
@@ -45,15 +50,10 @@
       "id": "Ratings_Bug_20x20",
       "url": ""
     },
-    "bool.Toggle_Ribbon": {
-      "type": "bool",
-      "id": "Toggle_Ribbon",
-      "value": false
-    },
     "bool.Toggle_Supercut": {
       "type": "bool",
       "id": "Toggle_Supercut",
-      "value": false
+      "value": true
     },
     "video.Supercut": {
       "type": "video",
