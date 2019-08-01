@@ -10,9 +10,9 @@
       "id": "Title_Treatment",
       "url": ""
     },
-    "bool.Retina_Title_Treatment": {
+    "bool.Double_Density_Title_Treatment": {
       "type": "bool",
-      "id": "Retina_Title_Treatment",
+      "id": "Double_Density_Title_Treatment",
       "value": true
     },
     "text.Tune_In": {
