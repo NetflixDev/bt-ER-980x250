@@ -60,6 +60,11 @@
       "id": "Supercut",
       "url": "https://ae.nflximg.net/assets/prod/94b3e9ce-a957-427e-bbf9-e11566afd288/20170725/049fa184-98ab-41dc-89d2-726aa179d210.mp4",
       "videoType": "SUPERCUT"
+    },
+    "bool.Toggle_RTL": {
+      "type": "bool",
+      "id": "Toggle_RTL",
+      "value": false
     }
   },
   "assetGroups": [],

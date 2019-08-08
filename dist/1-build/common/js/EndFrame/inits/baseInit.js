@@ -84,6 +84,10 @@ export default function baseInit(
   T.cta.setAttribute("max-width", isVerticalLockup ? ctaWidth : ctaMaxWidth);
   T.cta.setAttribute("height", ctaHeight);
 
+  if (adData.isRTL) {
+    T.cta.setAttribute("rtl", "");
+  }
+
   if (typeof extraCtaLogoInit === "function") {
     extraCtaLogoInit(T.cta, T.logo);
   }
