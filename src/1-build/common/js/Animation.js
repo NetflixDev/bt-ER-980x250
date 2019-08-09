@@ -9,11 +9,15 @@ export class Animation {
     });
     TweenLite.set(View.main, { opacity: 1 });
 
+    // netflix-ribbon animation at end of zoom always last this long
     const RIBBON_ANIM_TIME = 0.6;
-    const RIBBON_START = 0.75;
-    const INIT_ZOOM_START = 0;
-    const INIT_ZOOM_SCALE = 5;
-    const INIT_ZOOM_DURATION = RIBBON_START + RIBBON_ANIM_TIME;
+
+    const ribbonStart = (window.Creative && Creative.zoomDuration) || 1.7;
+    const initZoomDuration = ribbonStart + RIBBON_ANIM_TIME;
+    const initZoomStart = 0;
+    const initZoomScale = (window.Creative && Creative.zoomFactor) || 5;
+    const subScale = 1 + (initZoomScale - 1) * 0.03;
+    const timeOffset = initZoomDuration * 0.3;
 
     if (adData.useSupercut) {
       if (View.endFrame.iris) {
@@ -23,20 +27,18 @@ export class Animation {
       // have Netflix logo already fully in
       View.endFrame.netflixLogo.progress(1);
 
-      const _subScale = 1 + (INIT_ZOOM_SCALE - 1) * 0.03;
-      const _timeOffset = INIT_ZOOM_DURATION * 0.3;
-      TweenLite.to(View.endFrame, INIT_ZOOM_DURATION, {
-        delay: INIT_ZOOM_START,
-        scale: _subScale,
+      TweenLite.to(View.endFrame, initZoomDuration, {
+        delay: initZoomStart,
+        scale: subScale,
         ease: Linear.easeNone
       });
-      TweenLite.to(View.endFrame.subLayer, INIT_ZOOM_DURATION - _timeOffset, {
-        delay: INIT_ZOOM_START + _timeOffset,
-        scale: INIT_ZOOM_SCALE - _subScale,
+      TweenLite.to(View.endFrame.subLayer, initZoomDuration - timeOffset, {
+        delay: initZoomStart + timeOffset,
+        scale: initZoomScale - subScale,
         ease: Expo.easeIn
       });
 
-      TweenLite.delayedCall(RIBBON_START, () => {
+      TweenLite.delayedCall(ribbonStart, () => {
         View.ribbon.play();
       });
     } else {
