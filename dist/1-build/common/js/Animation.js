@@ -15,7 +15,10 @@ export class Animation {
     const ribbonStart = (window.Creative && Creative.zoomDuration) || 1.7;
     const initZoomDuration = ribbonStart + RIBBON_ANIM_TIME;
     const initZoomStart = 0;
-    const initZoomScale = (window.Creative && Creative.zoomFactor) || 5;
+    const initZoomScale = Math.min(
+      (window.Creative && Creative.zoomAmount) || 5,
+      30
+    );
     const subScale = 1 + (initZoomScale - 1) * 0.03;
     const timeOffset = initZoomDuration * 0.3;
 
