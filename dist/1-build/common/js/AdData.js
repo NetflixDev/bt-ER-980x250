@@ -34,7 +34,10 @@ export default function AdData() {
   self.svg = {};
 
   self.useSupercut = MonetUtils.getDataByKey("Toggle_Supercut");
-  self.isRTL = MonetUtils.getDataByKey("Toggle_RTL");
-  self.hasTT = !!MonetUtils.getDataByKey("Title_Treatment");
-  self.retinaTT = !!MonetUtils.getDataByKey("Double_Density_Title_Treatment");
+  self.isRTL = window.Monet && window.Monet.isRTL();
+  self.hasTT = !!MonetUtils.getDataByKey("Title_Image");
+  self.titleText = MonetUtils.getDataByKey("Title_Text");
+  self.headlineText = MonetUtils.getDataByKey("Headline_Text");
+  self.descriptionText = MonetUtils.getDataByKey("Description_Text");
+  self.retinaTT = true;
 }
