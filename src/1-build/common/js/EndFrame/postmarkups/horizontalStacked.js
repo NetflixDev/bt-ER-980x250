@@ -21,7 +21,7 @@ export default function horizontalStacked({
   brandingLockupOffset = 16,
   // distance from right edge and CTA-logo lockup
   brandingLockupRightPadding = 105,
-  tuneInFontSize = 18,
+  headlineFontSize = 18,
   pedigreeCenterYAlign = {
     type: Align.CENTER,
     against: 55
@@ -51,7 +51,7 @@ export default function horizontalStacked({
       y: Align.CENTER
     },
     brandingLockupOffset,
-    tuneInFontSize
+    headlineFontSize
   });
 
   // ratings bug
