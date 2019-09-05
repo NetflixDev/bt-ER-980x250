@@ -16,7 +16,7 @@
     {
       "name": "Headline_Text",
       "type": "text",
-      "value": "Headline",
+      "value": "",
       "isOptional": true
     },
     {

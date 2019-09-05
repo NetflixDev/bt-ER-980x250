@@ -45,12 +45,16 @@ export function sideBySideBrandingLockup(
   // cta
   T.cta.resize();
 
+  // switch typical CTA-logo orientation for RTL treatments
+  const leftEl = adData.isRTL ? T.cta : T.netflixLogo;
+  const rightEl = adData.isRTL ? T.netflixLogo : T.cta;
+
   // logo
-  Align.set(T.netflixLogo, {
+  Align.set(leftEl, {
     x: {
       type: Align.LEFT,
       outer: true,
-      against: T.cta,
+      against: rightEl,
       offset: -ctaLogoOffset
     }
   });
@@ -58,7 +62,7 @@ export function sideBySideBrandingLockup(
   // lockup to position CTA and logo together
   T.brandingLockup = new UIGroup({
     target: T,
-    children: [T.cta, T.netflixLogo]
+    children: [leftEl, rightEl]
   });
 
   // add headline to lockup if exists
