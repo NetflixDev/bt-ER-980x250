@@ -2,7 +2,7 @@ import { Styles, Markup, Align } from "ad-view";
 import { ImageManager } from "ad-control";
 import { Gesture, GestureEvent } from "ad-events";
 import { Animation } from "@common/js/Animation.js";
-import "@netflixadseng/wc-netflix-fonts";
+import "@netflixdev/wc-netflix-fonts";
 import { MonetUtils } from "ad-utils";
 
 export class Control {

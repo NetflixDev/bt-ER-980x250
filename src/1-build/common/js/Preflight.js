@@ -52,7 +52,7 @@ export class Preflight {
   static loadNetflixVideo() {
     console.log("Preflight.loadNetflixVideo()");
     if (adData.useSupercut) {
-      return import("@netflixadseng/wc-netflix-video");
+      return import("@netflixdev/wc-netflix-video");
     }
     return Promise.resolve();
   }
