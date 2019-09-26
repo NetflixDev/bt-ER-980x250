@@ -36,6 +36,7 @@ export default function AdData() {
   self.useSupercut = MonetUtils.getDataByKey("Toggle_Supercut");
   self.isRTL = window.Monet && window.Monet.isRTL();
   self.hasTT = !!MonetUtils.getDataByKey("Title_Image");
+  self.hasRatings = !!MonetUtils.getDataByKey("Ratings_Bug_Image");
   self.titleText = MonetUtils.getDataByKey("Title_Text");
   self.headlineText = MonetUtils.getDataByKey("Headline_Text");
   self.descriptionText = MonetUtils.getDataByKey("Description_Text");

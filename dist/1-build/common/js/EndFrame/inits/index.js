@@ -18,7 +18,12 @@ import baseInit from "./baseInit.js";
 export { mainInit, stackedInit };
 
 function stackedInit(T) {
-  mainInit(T);
+  baseInit(T, {
+    logoWidth: 118,
+    ctaWidth: 122,
+    ctaMaxWidth: 122,
+    ctaHeight: 33
+  });
 }
 
 function mainInit(T) {

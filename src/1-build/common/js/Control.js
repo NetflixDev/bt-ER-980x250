@@ -47,16 +47,10 @@ export class Control {
       .then(data => {
         console.log("	-> All Netflix web components ready");
         // monet data is now assigned to MonetUtils
-        adData.hasFTM = MonetUtils.getDataByKey("FTM");
-        adData.hasTuneIn = MonetUtils.getDataByKey("Tune_In");
-
-        // Ratings Bug
-        adData.hasRatings = MonetUtils.getDataByKey("Ratings_Bug_20x20");
-
         // if any Dynamic images must be loaded from monet
         // but referenced outside a monet component (CanvasImage, UIImage), follow this pattern
         //
-        // adData.ratingsSrc = ImageManager.addToLoad(MonetUtils.getDataByKey('Ratings_Bug_20x20'), { forCanvas: false })
+        // adData.ratingsSrc = ImageManager.addToLoad(MonetUtils.getDataByKey('Ratings_Bug_Image'), { forCanvas: false })
         //
 
         // proceed with ad AFTER the setData() Promise has been fulfilled

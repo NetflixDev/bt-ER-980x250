@@ -12,8 +12,8 @@ const {
 } = createSideBySidePostMarkups({
   defaultArgs: {
     ctaLogoOffset: 14,
-    headlineFontSize: 18,
-    headlineLockupOffset: 8
+    headlineFontSize: 16,
+    headlineLockupOffset: 12
   },
   yAlign: {
     type: Align.BOTTOM,

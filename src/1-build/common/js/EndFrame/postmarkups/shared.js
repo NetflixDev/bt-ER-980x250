@@ -99,8 +99,13 @@ export function stackedBrandingLockup(
 ) {
   // positioning CTA atop logo
   T.cta.resize();
-  Align.set(T.cta, {
-    against: T.netflixLogo,
+
+  // switch typical CTA-logo orientation for RTL treatments
+  const topEl = adData.isRTL ? T.netflixLogo : T.cta;
+  const bottomEl = adData.isRTL ? T.cta : T.netflixLogo;
+
+  Align.set(topEl, {
+    against: bottomEl,
     x: brandingLockupElemXAlign,
     y: {
       type: Align.TOP,
@@ -118,7 +123,7 @@ export function stackedBrandingLockup(
   const children = [T.cta, T.netflixLogo];
 
   if (adData.headlineText) {
-    formatTextElToBrandingLockup(T.headline, T.cta, {
+    formatTextElToBrandingLockup(T.headline, topEl, {
       textAlign,
       textFontSize: headlineFontSize,
       textLockupOffset: brandingLockupOffset - 4
