@@ -10,36 +10,30 @@
     }
   },
   "assets": {
-    "Background": {
+    "Main_Image": {
       "input": {
         "state": "required",
         "toolTip": "Background image: <ul><li>Match dimensions of the Container</li> <li>Do <b>not</b> include brand elements (Title, Logo, CTA, Tune-In)</li></ul>"
       }
     },
-    "Title_Treatment": {
+    "Title_Image": {
       "input": {
         "state": "required",
         "toolTip": "Title Treatment image:<ul><li>Match dimensions of the Container</li><li>Use a transparent PNG</li></ul>"
       }
     },
-    "CTA": {
+    "CTA_Text": {
       "input": {
         "state": "required",
         "pattern": ".*",
         "toolTip": "Call-to-action text."
       }
     },
-    "Tune_In": {
+    "Headline_Text": {
       "input": {
         "state": "optional",
         "pattern": ".*",
-        "toolTip": "Tune-in text."
-      }
-    },
-    "Toggle_Ribbon": {
-      "input": {
-        "state": "optional",
-        "toolTip": "Enabling Ribbon will play a scaled N ribbon animation before the endframe. If Supercut is also enabled, this animation plays before the video."
+        "toolTip": "Headline text."
       }
     },
     "Toggle_Supercut": {
@@ -48,33 +42,18 @@
         "toolTip": "Enabling Supercut will play FPO video until a Monet Video Asset has been added to the Treatment."
       }
     },
-    "Supercut": {
+    "Supercut_Video": {
       "input": {
         "state": "optional",
         "toolTip": "Temporary supercut URL. Actual supercut will be uploaded in setting up treatment in Monet. Please upload only .mp4 videos under 1 MB."
       }
     },
-    "FTM": {
+    "Exit_URL": {
       "input": {
         "state": "disabled"
       }
     },
-    "Exit_URL_iOS": {
-      "input": {
-        "state": "disabled"
-      }
-    },
-    "Exit_URL_Android": {
-      "input": {
-        "state": "disabled"
-      }
-    },
-    "Exit_URL_Desktop": {
-      "input": {
-        "state": "disabled"
-      }
-    },
-    "Ratings_Bug_20x20": {
+    "Ratings_Bug_Image": {
       "input": {
         "state": "disabled"
       }
