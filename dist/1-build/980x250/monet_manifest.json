@@ -7,15 +7,14 @@
   "physicalDimensions": [],
   "assets": [
     {
-      "name": "CTA_Text",
-      "type": "text",
-      "value": "WATCH NOW",
-      "maxLength": 25
+      "name": "Main_Image",
+      "type": "image",
+      "value": "treatment-assets/background.jpg"
     },
     {
-      "name": "Exit_URL",
-      "type": "url",
-      "value": "https://www.netflix.com/"
+      "name": "Title_Image",
+      "type": "image",
+      "value": ""
     },
     {
       "name": "Headline_Text",
@@ -24,14 +23,10 @@
       "isOptional": true
     },
     {
-      "name": "Title_Image",
-      "type": "image",
-      "value": ""
-    },
-    {
-      "name": "Main_Image",
-      "type": "image",
-      "value": "treatment-assets/background.jpg"
+      "name": "CTA_Text",
+      "type": "text",
+      "value": "WATCH NOW",
+      "maxLength": 25
     },
     {
       "name": "Toggle_Supercut",
@@ -44,6 +39,11 @@
       "value": "https://ae.nflximg.net/assets/prod/94b3e9ce-a957-427e-bbf9-e11566afd288/20170725/049fa184-98ab-41dc-89d2-726aa179d210.mp4",
       "width": 1280,
       "height": 720
+    },
+    {
+      "name": "Exit_URL",
+      "type": "url",
+      "value": "https://www.netflix.com/"
     }
   ]
 }
