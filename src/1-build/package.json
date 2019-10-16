@@ -32,13 +32,13 @@
     "@ff0000-ad-tech/ad-velvet": "^3.4.1",
     "core-js": "^2.5.7",
     "@netflixdev/wc-netflix-preloader": "^6.0.0",
-    "@netflixdev/wc-netflix-cta": "^7.1.0",
+    "@netflixdev/wc-netflix-cta": "^7.1.1",
     "@netflixdev/wc-monet-integrator": "^7.0.0",
-    "@netflixdev/wc-netflix-video": "^6.1.0",
+    "@netflixdev/wc-netflix-video": "^6.1.1",
     "@netflixdev/wc-netflix-flushed-ribbon": "^6.0.0",
     "@netflixdev/wc-netflix-brand-logo": "^6.0.0",
-    "@netflixdev/wc-netflix-text": "^6.0.0",
-    "@netflixdev/wc-netflix-img": "^6.1.0",
+    "@netflixdev/wc-netflix-text": "^6.0.1",
+    "@netflixdev/wc-netflix-img": "^6.2.1",
     "@netflixdev/wc-netflix-fonts": "^7.0.0"
   }
 }
