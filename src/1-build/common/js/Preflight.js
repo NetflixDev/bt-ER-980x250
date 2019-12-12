@@ -1,5 +1,6 @@
 import AdData from '@common/js/AdData.js'
 import { ImageManager } from 'ad-control'
+import { InlineLoader } from 'ad-load'
 import { MonetUtils } from 'ad-utils'
 
 
@@ -43,7 +44,7 @@ MonetUtils.setData(View.monetIntegrator)
 	static loadCreativeJs() {
 		console.log('Preflight.loadCreativeJs()')
 		return new Promise((resolve, reject) => {
-			new Loader('creative.js', {
+			new InlineLoader('creative.js', {
 				onFail: () => {
 					reject(new Error('Unable to load creative.js'))
 				},
